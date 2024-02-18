@@ -14,22 +14,22 @@ public class Principal {
 
     public static void main(String[] args) {
 
-            var leitor = new Scanner(System.in);
+            var scanner = new Scanner(System.in);
             var opcao = 0;
             //        var turma = new Turma();  // Obs. 001 Quando construir o metodo na classe Turma, precisa instanciar uma
             //        variavel aqui no Principal (main) para poder chamar o metodo da classe Turma
 
             while (opcao != 5) {
                 exibirMenu();
-                opcao = Integer.parseInt(leitor.nextLine());
+                opcao = Integer.parseInt(scanner.nextLine());
 
                 if (opcao == 1) {
 //                    cadastrarTurma(leitor, turmas);  ***Chamando o metodo cadastrarTurma com ArrayList
-                    cadastrarTurma(leitor);  //***Chamando o metodo cadastrarTurma com Files
+                    cadastrarTurma(scanner);  //***Chamando o metodo cadastrarTurma com Files
 
 
                 } else if (opcao == 2) {
-                    cadastrarEstudante(leitor);
+                    cadastrarEstudante(scanner);
 
                 } else if (opcao == 3) {
 //                    listarTurmas(turmas);          ***Chamando o metodo listarTurmas com ArrayList
