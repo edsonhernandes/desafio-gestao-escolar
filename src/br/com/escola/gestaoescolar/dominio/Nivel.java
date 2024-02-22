@@ -9,9 +9,9 @@ public enum Nivel {
 
     private final String nome;
 
-    Periodo(String nome) {
-        this.nome = nome;
-    }
+//    Periodo(String nome) {
+//        this.nome = nome;
+//    }
 
     public String getNome() {
         return nome;
