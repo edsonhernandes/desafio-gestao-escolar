@@ -48,8 +48,4 @@ public class Estudante {
     public String getCpf() {
         return cpf;
     }
-
-    public String getEmail() {
-        return email;
-    }
 }
