@@ -37,25 +37,15 @@ public class Estudante {
         return nome;
     }
 
-
     public String getTelefone() {
         return telefone;
     }
-
 
     public String getEndereco() {
         return endereco;
     }
 
-
     public String getCpf() {
         return cpf;
     }
-
-
-    public String getEmail() {
-        return email;
-    }
-
-
 }
