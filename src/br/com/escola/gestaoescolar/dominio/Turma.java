@@ -1,6 +1,7 @@
 package br.com.escola.gestaoescolar.dominio;
 
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class Turma {
 
@@ -46,43 +47,36 @@ public class Turma {
     }
 */
 
-    public String getCodigo() {
-        return codigo;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Turma turma = (Turma) o;
+        return Objects.equals(codigo, turma.codigo);
     }
 
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
+    @Override
+    public int hashCode() {
+        return Objects.hash(codigo);
+    }
+
+    public String getCodigo() {
+        return codigo;
     }
 
     public Curso getCurso() {
         return curso;
     }
 
-    public void setCurso(Curso curso) {
-        this.curso = curso;
-    }
-
     public LocalDate getDataInicio() {
         return dataInicio;
-    }
-
-    public void setDataInicio(LocalDate dataInicio) {
-        this.dataInicio = dataInicio;
     }
 
     public LocalDate getDataFim() {
         return dataFim;
     }
 
-    public void setDataFim(LocalDate dataFim) {
-        this.dataFim = dataFim;
-    }
-
     public Periodo getPeriodo() {
         return periodo;
-    }
-
-    public void setPeriodo(Periodo periodo) {
-        this.periodo = periodo;
     }
 }
